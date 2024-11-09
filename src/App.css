@@ -1,0 +1,138 @@
+:root {
+  
+  --font-base: 18px;          /* Base font size */
+  --font-small: 0.8rem;     /* Small text */
+  --font-large: 1.15rem;      /* Large text */
+
+
+  --container-width: 90vw;    /* Main container width */
+  --content-width: 80vw;      /* Inner content width */
+
+
+  --border-radius: 8px;       /* Base border radius */
+  --border-width: 1px;        /* Standard border width */
+
+  --padding: 1rem;
+  --margin: 1rem;
+
+  --Very-Dark-Gray: hsl(0, 0%, 17%);
+  --Dark-grey: hsl(0, 0%, 59%);
+
+  font-size: 18px;
+  font-family: "Rubik", sans-serif; 
+}
+
+body {
+  font-size: var(--font-base);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  background-image: url("assets/pattern-bg-desktop.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-container{
+  width: var(--container-width);
+  margin: 10px auto;
+  position: relative;
+  
+
+}
+
+h1{
+  text-align: center;
+  color: aliceblue;
+}
+
+.search-result{
+  display: flex;
+  flex-direction: row;
+  background-color: aliceblue;
+  border-radius: var(--border-radius);
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 20px auto;
+}
+
+.Inputarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px;
+  max-height: 40px;
+}
+
+.user-input{
+  width: 100%;
+  max-width: 320px;
+  max-height: inherit;
+  padding: 12px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid lightgrey;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: 0px 0px 20px -18px;
+  font-size: 1rem;
+  font-family: 
+}
+.user-input:hover {
+  border: 2px solid lightgrey;
+  box-shadow: 0px 0px 20px -17px;
+}
+
+.user-input:active {
+  transform: scale(0.95);
+}
+
+.user-input:focus {
+  border: 2px solid grey;
+}
+
+.search-button{
+  background-color: black;
+  border: none;
+  border-radius: var(--border-radius);
+  height: inherit;
+  width: 40px;
+  cursor: pointer;
+  align-items: flex-end;
+}
+
+.result-box-title{
+  font-size: var(--font-small);
+  color: var(--Dark-grey);
+  font-weight: 600;
+}
+
+.result-box-content{
+  font-size: calc(var(--font-large) + 0.2vw);
+  color: var(--Very-Dark-grey);
+  font-weight: 600;
+}
+
+.leaflet-container{
+ width: 100vw;
+ height: 470px;
+ margin: 0;
+ padding: 0; /* calculate height of 0the screen minus the heading */
+ position : absolute;
+ top: 200px;
+ z-index: -5;
+
+ 
+}
+
+@media (max-width: 575px) {
+  .search-result{
+    flex-direction: column;
+    width: 70vw;
+  }
+  .search-result  *{
+text-align: center;
+  }
+}
