@@ -7,6 +7,11 @@ import Resultbox from "./Resultbox";
 import Divider from "@mui/material/Divider";
 import "./App.css";
 import { duration } from "@mui/material";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+
+
 
 function App() {
   const apiKey = import.meta.env.VITE_API_KEY;
@@ -132,3 +137,7 @@ useEffect(() => {
 }
 
 export default App;
+export default defineConfig({
+  base: '/ip-tracker/',  
+  plugins: [react()],
+})
