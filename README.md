@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
 # overview
 Users should be able to:
 
@@ -28,6 +20,14 @@ Search for any IP addresses or domains and see the key information and location
  - - [React](https://reactjs.org/) - JS library
  - - [https://styled-components.com/](https://mui.com/material-ui/getting-started/) - For styles
  - - [anime.js] - JS library - For animation
+     ## React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 # what i learned
  this was the first time using a map library, learned how to integrate and manipulate maps, add markers using the [leaflet.js](https://leafletjs.com/index.html)
@@ -42,4 +42,4 @@ for the moment, the api used in this project does not provide location coordinat
   ## Author
 - Instagram  -[@taha_belaloui](https://www.instagram.com/taha_belaloui) 
     
->>>>>>> abd6391be7399fb3711e42a7558364800cdd2d12
+
